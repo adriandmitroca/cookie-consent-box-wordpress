@@ -1,0 +1,19 @@
+{
+  "name": "adriandmitroca/wordpress-cookie-consent-box",
+  "description": "A modern WordPress boilerplate for building organized and standardized themes",
+  "keywords": ["wordpress", "wordpress-plugin", "cookie-consent-box"],
+  "license": "MIT",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.2.4"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*",
+    "wp-coding-standards/wpcs": "0.14.*"
+  },
+  "scripts": {
+    "lint": [
+      "phpcbf --standard=.phpcs.xml ./ && phpcs --standard=.phpcs.xml ./"
+    ]
+  }
+}
