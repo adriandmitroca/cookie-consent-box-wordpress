@@ -11,11 +11,10 @@ Lightweight and good looking cookie consent box that helps you to be GDPR compla
 
 == Description ==
 
-Lightweight and good looking cookie consent box that helps you to be GDPR complaint. To make sure you won't lose
-any performance, assets are delivered using [jsdelivr.com](https://www.jsdelivr.com/) CDN that guarantees fast
-and reliable loads. If that's not enough, the JS file is
+Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
+We've already taken care of any possible performance issues, that's why JS file
 [loaded asynchronously after your whole page has been loaded](https://developers.google.com/speed/docs/insights/BlockingJS)
-to make sure it won't be slow down in any way. And still, it weights something around 10 kB.
+to make sure it won't be slow down your site in any way.
 
 == Installation ==
 

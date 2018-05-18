@@ -53,7 +53,7 @@ class Cookie_Consent_Box_Public {
 	public function enqueue_styles() {
 		wp_enqueue_style(
 			$this->plugin_name,
-			'//cdn.jsdelivr.net/npm/cookie-consent-box/dist/cookie-consent-box.min.css',
+			plugin_dir_url( __FILE__ ) . 'css/cookie-consent-box.css',
 			array(),
 			$this->version,
 			'all'
@@ -68,7 +68,7 @@ class Cookie_Consent_Box_Public {
 	public function enqueue_scripts() {
 		wp_enqueue_script(
 			$this->plugin_name,
-			'//cdn.jsdelivr.net/npm/cookie-consent-box/dist/cookie-consent-box.min.js',
+			plugin_dir_url( __FILE__ ) . 'js/cookie-consent-box.js',
 			array(),
 			$this->version,
 			true
