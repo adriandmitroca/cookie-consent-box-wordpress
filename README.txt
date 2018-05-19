@@ -3,7 +3,7 @@ Contributors: adriandmitroca
 Tags: cookie, consent, box, eprivacy, gdpr
 Requires at least: 4.1.0
 Tested up to: 4.9.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,10 @@ Actually yes, it is! Just take a look [here](https://adriandmitroca.github.io/co
 Sure you do! Take a look at [npm/cdn library](https://github.com/adriandmitroca/cookie-consent-box)
 
 == Changelog ==
+
+= 1.0.1 =
+* Selecting Privacy Policy page from a dropdown
+* Improved settings page appearance
 
 = 1.0.0 =
 * Initial version

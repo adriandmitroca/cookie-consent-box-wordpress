@@ -5,7 +5,7 @@
  * Plugin Name:       Cookie Consent Box
  * Plugin URI:        https://wordpress.org/plugins/cookie-consent-box/
  * Description:       Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Adrian Dmitroca
  * Author URI:        https://radicalwebdesign.co.uk
  * License:           GPL-2.0+
@@ -22,9 +22,8 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
- * Rename this for your plugin and update it as you release new versions.
  */
-define( 'CCB_VERSION', '1.0.0' );
+define( 'CCB_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
