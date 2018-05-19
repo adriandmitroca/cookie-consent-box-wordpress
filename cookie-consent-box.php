@@ -7,7 +7,7 @@
  * Description:       Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
  * Version:           1.0.0
  * Author:            Adrian Dmitroca
- * Author URI:        https://dmitroca.pl
+ * Author URI:        https://radicalwebdesign.co.uk
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       cookie-consent-box

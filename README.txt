@@ -1,6 +1,6 @@
 === Cookie Consent Box ===
 Contributors: adriandmitroca
-Tags: comments, spam
+Tags: cookie, consent, box, eprivacy, gdpr
 Requires at least: 4.1.0
 Tested up to: 4.9.2
 Stable tag: 1.0.0
@@ -12,9 +12,8 @@ Lightweight and good looking cookie consent box that helps you to be GDPR compla
 == Description ==
 
 Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
-We've already taken care of any possible performance issues, that's why JS file
-[loaded asynchronously after your whole page has been loaded](https://developers.google.com/speed/docs/insights/BlockingJS)
-to make sure it won't be slow down your site in any way.
+
+We've already taken care of any possible performance issues, that's why JS file [loaded asynchronously after your whole page has been loaded](https://developers.google.com/speed/docs/insights/BlockingJS) to make sure it won't be slow down your site in any way.
 
 == Installation ==
 
@@ -29,8 +28,7 @@ You will find 'Cookie Consent Box' menu page in your WordPress admin panel setti
 
 = Is there any demo? =
 
-Actually yes, it is! Just take a look [here](https://adriandmitroca.github.io/cookie-consent-box/)
-to see general appearance.
+Actually yes, it is! Just take a look [here](https://adriandmitroca.github.io/cookie-consent-box/) to see general appearance.
 
 = Can I use it without installing a plugin? =
 
