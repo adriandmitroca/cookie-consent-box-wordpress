@@ -16,9 +16,12 @@ mv ./assets/ ../assets/
 rm -rf .git/
 rm -rf deploy/
 rm .travis.yml
+rm .gitignore
 
 # 6. Go to SVN repository root
 cd ../
+
+svn add trunk/*
 
 # 7. Create SVN tag
 svn cp trunk tags/$TRAVIS_TAG
