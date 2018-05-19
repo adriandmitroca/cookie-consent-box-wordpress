@@ -1,0 +1,13 @@
+language: php
+php:
+- 7.0
+script:
+- php -l *.php
+branches:
+  only:
+  - "/\\d\\.\\d\\.\\d/"
+deploy:
+  provider: script
+  script: deploy/deploy.sh
+  on:
+    tags: true
