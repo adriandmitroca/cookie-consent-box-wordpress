@@ -19,51 +19,60 @@ $container_width        = ! empty( $options['container_width'] ) ? $options['con
 ?>
 
 <div class="wrap">
-    <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
-    <br>
+    <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
     <form method="post" action="options.php">
 		<?php
 		settings_fields( $this->plugin_name );
 		do_settings_sections( $this->plugin_name );
 		?>
 
-        <div class="postbox">
-            <div class="inside">
-
-                <!-- Background Color -->
-                <p>
-                    <label for="<?php echo $this->plugin_name; ?>-background_color">
-						<?php esc_attr_e( 'Background Color', $this->plugin_name ); ?>
-                    </label>
-
+        <table class="form-table tools-cookie-consent-options">
+            <tbody>
+            <!-- Background Color -->
+            <tr>
+                <th scope="row">
+                    Background Color
+                </th>
+                <td>
                     <input type="text" class="<?php echo $this->plugin_name; ?>-color-picker"
                            id="<?php echo $this->plugin_name; ?>-background_color"
                            name="<?php echo $this->plugin_name; ?>[background_color]"
                            value="<?php echo $background_color; ?>"/>
-                </p>
+                </td>
+            </tr>
 
-                <!-- Text Color -->
-                <p>
-                    <label for="<?php echo $this->plugin_name; ?>-text_color"><?php _e( 'Text Color', $this->plugin_name ); ?></label>
+            <!-- Text Color -->
+            <tr>
+                <th scope="row">
+                    Text Color
+                </th>
+                <td>
                     <input type="text" class="<?php echo $this->plugin_name; ?>-color-picker"
                            id="<?php echo $this->plugin_name; ?>-text_color"
                            name="<?php echo $this->plugin_name; ?>[text_color]"
                            value="<?php echo $text_color; ?>"/>
-                </p>
+                </td>
+            </tr>
 
-                <!-- Privacy Policy URL -->
-                <div>
-                    <label for="<?php echo $this->plugin_name; ?>-privacy_policy_page_id">Privacy Policy Page</label>
-                    <fieldset>
-	                    <?php wp_dropdown_pages(array('selected' => $privacy_policy_page_id, 'name' => $this->plugin_name . '[privacy_policy_page_id]' )); ?>
-                    </fieldset>
-                </div>
+            <!-- Privacy Policy Page -->
+            <tr>
+                <th scope="row">
+                    Privacy Policy Page
+                </th>
+                <td>
+					<?php wp_dropdown_pages( array(
+						'selected' => $privacy_policy_page_id,
+						'name'     => $this->plugin_name . '[privacy_policy_page_id]'
+					) ); ?>
+                </td>
+            </tr>
 
-                <br>
-
-                <!-- Container Width -->
-                <div>
-                    <label for="<?php echo $this->plugin_name; ?>-container_width">Container Width</label>
+            <!-- Container Width -->
+            <tr>
+                <th scope="row">
+                    Container Width
+                </th>
+                <td>
                     <fieldset>
                         <input type="text" class="regular-text" id="<?php echo $this->plugin_name; ?>-container_width"
                                name="<?php echo $this->plugin_name; ?>[container_width]"
@@ -71,12 +80,13 @@ $container_width        = ! empty( $options['container_width'] ) ? $options['con
                                value="<?php if ( ! empty( $container_width ) ) {
 							       echo $container_width;
 						       } ?>"/>
-                        <span><?php esc_attr_e( 'Width of your page container', $this->plugin_name ); ?></span>
+                        <span><?php esc_attr_e( 'Width of your page container (in pixels)', $this->plugin_name ); ?></span>
                     </fieldset>
-                </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
-				<?php submit_button( __( 'Save all changes', $this->plugin_name ), 'primary', 'submit', true ); ?>
-            </div>
-        </div>
+		<?php submit_button( __( 'Save all changes', $this->plugin_name ), 'primary', 'submit', true ); ?>
     </form>
 </div>
