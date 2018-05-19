@@ -1,6 +1,6 @@
 === Cookie Consent Box ===
 Contributors: adriandmitroca
-Tags: cookie, consent, box, eprivacy, gdpr
+Tags: cookie, cookies, compliance, notice, banner, consent, box, eprivacy, gdpr
 Requires at least: 4.1.0
 Tested up to: 4.9.2
 Stable tag: 1.0.1
