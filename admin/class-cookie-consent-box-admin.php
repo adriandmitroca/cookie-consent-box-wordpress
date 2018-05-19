@@ -132,7 +132,7 @@ class Cookie_Consent_Box_Admin {
 			);
 		}
 
-		$valid['privacy_policy_url'] = esc_url( $input['privacy_policy_url'] );
+		$valid['privacy_policy_page_id'] = esc_attr( $input['privacy_policy_page_id'] );
 
 		$valid['container_width'] = sanitize_text_field( $input['container_width'] );
 

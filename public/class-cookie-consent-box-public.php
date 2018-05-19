@@ -79,7 +79,7 @@ class Cookie_Consent_Box_Public {
 				'language'        => $this->get_language(),
 				'backgroundColor' => $this->options['background_color'],
 				'textColor'       => $this->options['text_color'],
-				'url'             => $this->options['privacy_policy_url'],
+				'url'             => get_permalink( $this->options['privacy_policy_page_id'] ),
 				'containerWidth'  => $this->options['container_width'],
 			)
 		);
