@@ -4,7 +4,7 @@
  * @wordpress-plugin
  * Plugin Name:       Cookie Consent Box
  * Plugin URI:        https://wordpress.org/plugins/cookie-consent-box/
- * Description:       Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
+ * Description:       Cookie Consent Box is a lightweight and good looking way to inform users your site uses cookies and to comply with EU cookie law regulations.
  * Version:           1.0.1
  * Author:            Adrian Dmitroca
  * Author URI:        https://radicalwebdesign.co.uk

@@ -7,13 +7,21 @@ Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
+Cookie Consent Box is a lightweight and good looking way to inform users your site uses cookies and to comply with EU cookie law regulations.
 
 == Description ==
 
-Lightweight and good looking cookie consent box that helps you to be GDPR complaint.
+[Cookie Consent Box](https://radicalwebdesign.co.uk) is a lightweight and good looking way to inform users your site uses cookies and to comply with EU cookie law regulations.
 
-We've already taken care of any possible performance issues, that's why JS file [loaded asynchronously after your whole page has been loaded](https://developers.google.com/speed/docs/insights/BlockingJS) to make sure it won't be slow down your site in any way.
+We have already taken care of any possible performance issues, which is why the JS file is loaded [asynchronously](https://developers.google.com/speed/docs/insights/BlockingJS) after your whole page has loaded, so it does not slow your site down in any way.
+
+Features include:
+
+- Lightweight, responsive
+- Redirects users to specified page for more cookie information
+- Option to choose background colour and text colour
+- Option to specify container width
+- SEO friendly
 
 == Installation ==
 
