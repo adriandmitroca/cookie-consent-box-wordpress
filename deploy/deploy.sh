@@ -10,11 +10,12 @@ cp -R ./* ../svn/trunk/
 cd ../svn/trunk/
 
 # 4. Move assets/ to SVN /assets/
-mv ./assets/ ../assets/
+mv ./assets/* ../assets/
 
 # 5. Clean up unnecessary files
 rm -rf .git/
 rm -rf deploy/
+rm -rf assets/
 rm .travis.yml
 rm .gitignore
 
