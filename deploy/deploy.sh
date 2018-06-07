@@ -22,6 +22,7 @@ rm .gitignore
 cd ../
 
 svn add trunk/*
+svn add assets/*
 
 # 7. Create SVN tag
 svn cp trunk tags/$TRAVIS_TAG
