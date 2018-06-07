@@ -44,6 +44,9 @@ Sure you do! Take a look at [npm/cdn library](https://github.com/adriandmitroca/
 
 == Changelog ==
 
+= 1.0.2 =
+* Updated plugin's copy and registry assets
+
 = 1.0.1 =
 * Selecting Privacy Policy page from a dropdown
 * Improved settings page appearance
