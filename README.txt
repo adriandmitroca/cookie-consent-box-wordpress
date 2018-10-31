@@ -50,6 +50,7 @@ Sure you do! Take a look at [npm/cdn library](https://github.com/adriandmitroca/
 * Added option to customize cookie expiration time
 * Added option to change `target` attribute in "Learn more" link
 * Added option to hide "Learn more" link entirely
+* Added option to upload a file rather than just linking to a separated Privacy Policy page
 * Various CSS fixes that keeps notice box from conflicting with your site stylesheet
 
 = 1.0.3 =
