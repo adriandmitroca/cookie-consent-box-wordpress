@@ -45,7 +45,7 @@ Sure you do! Take a look at [npm/cdn library](https://github.com/adriandmitroca/
 == Changelog ==
 
 = 1.1.0 =
-* Added italian and french translations
+* Added Italian and French translations
 * Added option to customize notice box content entirely
 * Added option to customize cookie expiration time
 * Added option to change `target` attribute in "Learn more" link
