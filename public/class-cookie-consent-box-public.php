@@ -68,7 +68,7 @@ class Cookie_Consent_Box_Public {
 	public function enqueue_scripts() {
 		wp_enqueue_script(
 			$this->plugin_name,
-			plugin_dir_url( __FILE__ ) . 'js/cookie-consent-box.js',
+			plugin_dir_url( __FILE__ ) . 'js/cookie-consent-box.min.js',
 			array(),
 			$this->version,
 			true
@@ -76,11 +76,14 @@ class Cookie_Consent_Box_Public {
 
 		wp_localize_script(
 			$this->plugin_name, 'CookieBoxConfig', array(
-				'language'        => $this->get_language(),
-				'backgroundColor' => $this->options['background_color'],
-				'textColor'       => $this->options['text_color'],
-				'url'             => get_permalink( $this->options['privacy_policy_page_id'] ),
-				'containerWidth'  => $this->options['container_width'],
+				'language'           => $this->get_language(),
+				'backgroundColor'    => $this->options['background_color'],
+				'textColor'          => $this->options['text_color'],
+				'url'                => $this->get_url(),
+				'linkTarget'         => ! empty( $this->options['link_target'] ) ? $this->options['link_target'] : null,
+				'cookieExpireInDays' => ! empty( $this->options['cookie_expire_in_days'] ) ? $this->options['cookie_expire_in_days'] : null,
+				'containerWidth'     => $this->options['container_width'],
+				'content'            => ! empty( $this->options['customized_content'] ) ? $this->options['content'] : null,
 			)
 		);
 	}
@@ -89,6 +92,18 @@ class Cookie_Consent_Box_Public {
 		$parts = explode( '_', get_locale() );
 
 		return ! empty( $parts ) ? $parts[0] : 'en';
+	}
+
+	private function get_url() {
+		if ( ! isset( $this->options['link_type'] ) || $this->options['link_type'] === 'page' ) {
+			return get_permalink( $this->options['privacy_policy_page_id'] );
+		} elseif ( $this->options['link_type'] === 'file' ) {
+			return wp_get_attachment_url( $this->options['privacy_policy_file_id'] );
+		} elseif ( $this->options['link_type'] === 'none' ) {
+			return null;
+		}
+
+		return;
 	}
 
 	public function script_loader_tag( $tag, $handle ) {

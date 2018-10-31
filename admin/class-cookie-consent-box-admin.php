@@ -58,6 +58,8 @@ class Cookie_Consent_Box_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
+		wp_enqueue_media();
+
 		wp_enqueue_script(
 			$this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/cookie-consent-box-admin.js', array(
 				'jquery',
@@ -132,9 +134,21 @@ class Cookie_Consent_Box_Admin {
 			);
 		}
 
+		$valid['link_type'] = sanitize_text_field( $input['link_type'] );
+
+		$valid['link_target'] = sanitize_text_field( $input['link_target'] );
+
 		$valid['privacy_policy_page_id'] = esc_attr( $input['privacy_policy_page_id'] );
 
+		$valid['privacy_policy_file_id'] = intval( $input['privacy_policy_file_id'] );
+
 		$valid['container_width'] = sanitize_text_field( $input['container_width'] );
+
+		$valid['cookie_expire_in_days'] = intval( $input['cookie_expire_in_days'] );
+
+		$valid['customized_content'] = boolval( $input['customized_content'] );
+
+		$valid['content'] = $input['content'];
 
 		return $valid;
 	}
