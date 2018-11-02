@@ -3,7 +3,7 @@ Contributors: adriandmitroca
 Tags: cookie, cookies, compliance, notice, banner, consent, box, eprivacy, gdpr
 Requires at least: 4.1.0
 Tested up to: 4.9.2
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,9 +18,10 @@ We have already taken care of any possible performance issues, which is why the 
 Features include:
 
 - Lightweight, responsive
-- Redirects users to specified page for more cookie information
-- Option to choose background colour and text colour
-- Option to specify container width
+- Customisable cookie message (including out of the box translations for English, French, German, Italian, Portuguese, Romanian and Polish)
+- Redirect users to specified page, or file attachment for more cookie information
+- Option to choose background colour, text colour and specify container width to suit your own website style.
+- Option to customize cookie expiration time
 - SEO friendly
 
 == Installation ==

@@ -5,7 +5,7 @@
  * Plugin Name:       Cookie Consent Box
  * Plugin URI:        https://wordpress.org/plugins/cookie-consent-box/
  * Description:       Cookie Consent Box is a lightweight and good looking way to inform users your site uses cookies and to comply with EU cookie law regulations.
- * Version:           1.1.2
+ * Version:           1.1.3
  * Author:            Radical Web Design
  * Author URI:        https://radicalwebdesign.co.uk
  * License:           GPL-2.0+
@@ -23,7 +23,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  */
-define( 'CCB_VERSION', '1.1.2' );
+define( 'CCB_VERSION', '1.1.3' );
 
 /**
  * The code that runs during plugin activation.
