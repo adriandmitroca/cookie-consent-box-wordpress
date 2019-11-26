@@ -2,9 +2,9 @@
   "scripts": {
     "publish-css": "cp ./node_modules/cookie-consent-box/dist/cookie-consent-box.css ./public/css/cookie-consent-box.css",
     "publish-js": "cp ./node_modules/cookie-consent-box/dist/cookie-consent-box.min.js ./public/js/cookie-consent-box.js",
-    "publish": "yarn upgrade --latest && npm run publish-css && npm run publish-js"
+    "prepare": "yarn upgrade --latest && npm run publish-css && npm run publish-js"
   },
   "dependencies": {
-    "cookie-consent-box": "^2.3.1"
+    "cookie-consent-box": "^2.4.0"
   }
 }
