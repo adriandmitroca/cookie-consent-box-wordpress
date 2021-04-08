@@ -3,7 +3,7 @@ Contributors: adriandmitroca
 Tags: cookie, cookies, compliance, notice, banner, consent, box, eprivacy, gdpr
 Requires at least: 4.1.0
 Tested up to: 5.7.0
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ Actually yes, it is! Just take a look [here](https://adriandmitroca.github.io/co
 Sure you do! Take a look at [npm/cdn library](https://github.com/adriandmitroca/cookie-consent-box)
 
 == Changelog ==
+
+= 1.1.6 =
+* Added support up to WordPress 5.7
 
 = 1.1.4 =
 * Added support up to WordPress 5.3
