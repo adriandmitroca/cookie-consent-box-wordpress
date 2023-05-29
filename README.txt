@@ -45,6 +45,10 @@ Sure you do! Take a look at [npm/cdn library](https://github.com/adriandmitroca/
 
 == Changelog ==
 
+= 1.1.7 =
+* Fixed community reported security vulnerabilities
+* Added support up to WordPress 6.2
+
 = 1.1.6 =
 * Added support up to WordPress 5.7
 

@@ -5,7 +5,7 @@
  * Plugin Name:       GDPR Cookie Consent Notice Box
  * Plugin URI:        https://wordpress.org/plugins/cookie-consent-box/
  * Description:       Cookie Consent Box is a lightweight and good looking way to inform users your site uses cookies and to comply with EU cookie law regulations.
- * Version:           1.1.6
+ * Version:           1.1.7
  * Author:            Radical Web Design
  * Author URI:        https://radicalwebdesign.co.uk
  * License:           GPL-2.0+
