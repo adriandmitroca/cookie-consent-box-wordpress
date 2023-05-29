@@ -148,7 +148,9 @@ class Cookie_Consent_Box_Admin {
 
 		$valid['customized_content'] = boolval( $input['customized_content'] );
 
-		$valid['content'] = $input['content'];
+        foreach ( $input['content'] as $key => $value ) {
+            $valid['content'][$key] = wp_kses_post( $value );
+        }
 
 		return $valid;
 	}

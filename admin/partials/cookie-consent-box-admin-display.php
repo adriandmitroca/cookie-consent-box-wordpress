@@ -184,7 +184,7 @@ $content = ! empty($options['content']) ? $options['content'] : [];
           <fieldset>
             <input type="text" class="regular-text" id="<?php echo $this->plugin_name; ?>-content-title"
                    name="<?php echo $this->plugin_name; ?>[content][title]"
-                   value="<?php echo ! empty($content) ? $content['title'] : '' ?>"/>
+                   value="<?php echo ! empty($content) ? esc_textarea($content['title']) : '' ?>"/>
           </fieldset>
         </td>
       </tr>
@@ -196,7 +196,7 @@ $content = ! empty($options['content']) ? $options['content'] : [];
         <td>
           <fieldset>
                   <textarea class="regular-text" id="<?php echo $this->plugin_name; ?>-content-content"
-                            name="<?php echo $this->plugin_name; ?>[content][content]"><?php echo ! empty($content) ? $content['content'] : '' ?></textarea>
+                            name="<?php echo $this->plugin_name; ?>[content][content]"><?php echo ! empty($content) ? esc_textarea($content['content']) : '' ?></textarea>
           </fieldset>
         </td>
       </tr>
@@ -209,7 +209,7 @@ $content = ! empty($options['content']) ? $options['content'] : [];
           <fieldset>
             <input type="text" class="regular-text" id="<?php echo $this->plugin_name; ?>-content-accept"
                    name="<?php echo $this->plugin_name; ?>[content][accept]"
-                   value="<?php echo ! empty($content) ? $content['accept'] : '' ?>"/>
+                   value="<?php echo ! empty($content) ? esc_textarea($content['accept']) : '' ?>"/>
           </fieldset>
         </td>
       </tr>
@@ -222,7 +222,7 @@ $content = ! empty($options['content']) ? $options['content'] : [];
           <fieldset>
             <input type="text" class="regular-text" id="<?php echo $this->plugin_name; ?>-content-learnMore"
                    name="<?php echo $this->plugin_name; ?>[content][learnMore]"
-                   value="<?php echo ! empty($content) ? $content['learnMore'] : '' ?>"/>
+                   value="<?php echo ! empty($content) ? esc_textarea($content['learnMore']) : '' ?>"/>
           </fieldset>
         </td>
       </tr>
